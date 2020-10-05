@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            #logo {
+                float:left;
+                width:40px;
+                height:40px;
+                padding:5px;
+            }
+
+            header,footer,main{
+                overflow: auto;
+            }
+
+            nav a{
+                text-decoration: none; 
+                padding: 0px 10px;
+            }
+
+            nav{
+                float: right;
+                margin-top: 10px;
+            }
+
+            #nav{
+                display: none;
+            }
+
+            header,main, #side-nav, footer, section{
+                border: 1px solid black;
+            }
+
+            #side-nav{
+                float:left;
+                width:40%;
+            }
+
+            section{
+                width:60%;
+                overflow: auto;
+                float:right;
+            }
+            .product{
+                width:18%;
+                border: 1px solid black;
+                padding: 40px;
+                float: left;
+                margin:5px;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                }
+
+            @media only screen and (max-width:500px) {
+                #side-nav, nav{
+                    display: none;
+                }
+
+                #logo{
+                    width:30px;
+                    height:30px;
+                }
+
+                section{
+                    float:none;
+                    width:100%;
+                }
+
+                .hamburger{
+                    width:20px;
+                    height:3px;
+                    background-color:black;
+                    margin:5px 2px;
+                }
+
+                #nav{
+                    display:block;
+                    float: right;
+                }
+
+                .product{
+                    float:left;
+                    width:40%;
+                    margin:5px 5px 10px 5px;
+                }
+
+                /* .product:nth-child(odd) {
+                    float:left;
+                }
+
+                .product:nth-child(even) {
+                    float:right;
+                }*/
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="images.jpeg" alt="logo" id="logo"/>
+            <nav>
+                <a href="#">Home</a> 
+                <a href="#">Profile</a>
+                <a href="#">AboutUs</a>
+            </nav>
+            <div id="nav">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </header>
+        <main>
+            <div id="side-nav">
+                Filter Section
+            </div>
+            <section>
+                <ul>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                    <li class="product"></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
+</html>
